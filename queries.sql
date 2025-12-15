@@ -25,29 +25,32 @@ INSERT INTO Emp1 VALUES
 (8839, 'AMIR', 'PRESIDENT', NULL, '1991-11-18', 5000.00, NULL, 10),
 (8844, 'KULDEEP', 'SALESMAN', 8698, '1991-09-08', 1500.00, 0.00, 30);
 
-select* from Emp1;
-
+(A)
 SELECT ename, sal
 FROM Emp1
 WHERE sal >= 2200;
 
+(B)
 SELECT *
 FROM Emp1
 WHERE comm IS NULL;
 
+(C)
 SELECT ename, sal
 FROM Emp1
 WHERE sal NOT BETWEEN 2500 AND 4000;
 
+(D)
 SELECT ename, job, sal
 FROM Emp1
 WHERE mgr IS NULL;
 
+(E)
 SELECT ename
 FROM Emp1
 WHERE ename LIKE '__A%';
 
-
+(F)
 SELECT ename
 FROM Emp1
 WHERE ename LIKE '%T';
